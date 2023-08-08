@@ -15,8 +15,8 @@ My solution to the Frontend Mentor QR code componenet challenge, made using Reac
 
 ### Links
 
-- Solution URL: (https://github.com/SaltySaff/)
-- Live Site URL: ()
+- Solution URL: (https://github.com/SaltySaff/results-summary)
+- Live Site URL: (https://loquacious-crisp-00102a.netlify.app)
 
 ## My process
 
@@ -25,7 +25,7 @@ My solution to the Frontend Mentor QR code componenet challenge, made using Reac
 - Semantic HTML5 markup
 - CSS custom properties
 - Mobile-first workflow
-- [TailwindCSS] (https://tailwindcss.com/)
+- [TailwindCSS](https://tailwindcss.com/)
 - [React](https://reactjs.org/) - JS library
 
 ## Author
