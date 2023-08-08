@@ -26,7 +26,7 @@ My solution to the Frontend Mentor QR code componenet challenge, made using Reac
 - CSS custom properties
 - Mobile-first workflow
 - [TailwindCSS](https://tailwindcss.com/)
-- [React](https://reactjs.org/) - JS library
+- [React](https://reactjs.org/)
 
 ## Author
 
