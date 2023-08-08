@@ -4,13 +4,13 @@ export default function Result() {
       <h3 className="text-lg font-bold text-light-lavender sm:text-2xl">
         Your Result
       </h3>
-      <figure className="flex h-36 w-36 sm:w-44 sm:h-44 flex-col items-center justify-center rounded-full bg-gradient-to-b from-violet-blue to-persian-blue text-center font-bold text-light-lavender">
+      <figure className="flex h-36 w-36 flex-col items-center justify-center rounded-full bg-gradient-to-b from-violet-blue to-persian-blue text-center font-bold text-light-lavender sm:h-44 sm:w-44">
         <span className="block text-6xl font-extrabold text-white">76</span> of
         100
       </figure>
       <figcaption className="mx-10 mb-3 text-center">
         <h2 className="text-2xl font-bold text-white">Great</h2>
-        <p className="text-m mt-1 sm:mt-2 max-w-xs sm:leading-6 leading-5 text-light-lavender">
+        <p className="text-m mt-1 max-w-xs leading-5 text-light-lavender sm:mt-2 sm:leading-6">
           You scored higher than 65% of the people who have taken these tests.
         </p>
       </figcaption>

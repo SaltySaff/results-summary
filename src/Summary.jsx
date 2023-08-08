@@ -1,20 +1,35 @@
-// import iconReaction from '../assets/images/icon-reaction.svg';
-// import iconMemory from '../assets/images/icon-memory.svg';
-// import iconVerbal from '../assets/images/icon-verbal.svg';
-// import iconVisual from '../assets/images/icon-visual.svg';
+import iconReaction from '../assets/images/icon-reaction.svg';
+import iconMemory from '../assets/images/icon-memory.svg';
+import iconVerbal from '../assets/images/icon-verbal.svg';
+import iconVisual from '../assets/images/icon-visual.svg';
+
+// to make icons work when deployed
+const iconMap = {
+  './assets/images/icon-reaction.svg': iconReaction,
+  './assets/images/icon-memory.svg': iconMemory,
+  './assets/images/icon-verbal.svg': iconVerbal,
+  './assets/images/icon-visual.svg': iconVisual,
+};
+
 import data from '../data.json';
+import { useState, useEffect } from 'react';
 
 export default function Summary() {
-  console.log(data);
+  // simulating pulling data from an api and save it as state
+  const [listItemsData, setListItemsData] = useState([]);
 
-  const listItems = data.map((category) => {
+  useEffect(() => {
+    setListItemsData(data);
+  }, [listItemsData]);
+
+  const listItems = listItemsData.map((category) => {
     return (
       <li
         key={category.id}
         className="text-m flex justify-between rounded-lg bg-light-red/10 p-4 font-bold text-light-red"
       >
         <figure className="flex items-center gap-3">
-          <img src={category.icon} alt="lightning bolt icon" />
+          <img src={iconMap[category.icon]} />
           <figcaption>{category.category}</figcaption>
         </figure>
         <span className="font-bold text-dark-gray-blue/50">
@@ -41,3 +56,5 @@ export default function Summary() {
     </section>
   );
 }
+
+// fetch(such and such) setData(such and such)
